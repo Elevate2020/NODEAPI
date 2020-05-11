@@ -24,18 +24,21 @@ Either you can add dependency in the file itself or install dependency in your t
 #### ^ = it will download the latest version automaticlly.
 
 
+## Let's run our Node API
 
-# Recomended Tools:
+#### 1. Clone the git repo
 
-### 1.eslint (npm i eslint -D)
+  git clone https://github.com/Elevate2020/NODEAPI.git
 
- In package.json add "lint":"eslint", in the script section.
- Run 'npm run lint -- --init' to initiate the liniting.
- Then run 'npm run lint filename OR .'
+#### 2. Navigate to project directory in your local computer
 
-### 2.Nodemon (npm i nodemon)
+#### 3. Compile/Build the application 
 
- Watch your node project and restarts once once it sees any source file change.
+  npm install
+
+#### 4. Start the application
+  npm start
+
 
  
 
