@@ -40,9 +40,9 @@ describe('App', () =>{
         });
     });
 
-    // after(function(){
-    //     process.exit(0);
-    // });
+    after(function(){
+        process.exit(0);
+    });
     
 });
 

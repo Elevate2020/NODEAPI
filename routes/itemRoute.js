@@ -1,8 +1,10 @@
 const express = require('express')
-const userController = require('../controllers/userController')
-const userRouter = express.Router()
+const itemController = require('../controllers/itemController')
+const itemRouter = express.Router()
 
-userRouter.get('/items', userController.getUsers);
-userRouter.get('/item/{itemId}', userController.getUsers);
 
-module.exports = userRouter
+itemRouter.get('/items', itemController.getItems);
+itemRouter.get('/item/:itemId?', itemController.getItemById);
+itemRouter.post('/addItem', itemController.addItem);
+
+module.exports = itemRouter

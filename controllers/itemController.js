@@ -1,19 +1,29 @@
-const userDao = require('../dao/userDao')
+const userOrm = require('../dao/itemOrmDao')
 
-const getUsers = (request, response) => {
-    console.log("getUsers controller")
-    userDao.getAllUserDB(response);
+  /** Get controller for all Items from DB */
+  const getItems = (request, response) => {
+    console.log("getItems controller")
+    userOrm.getAllItems(response);
     response.status(200);
   }
 
-const addUsers = (request, response) => {
-    console.log("addUsers controller...")
-    userDao.addUserDB(response);
+  /** Get controller to get specific Item from DB */
+  const getItemById = (request, response) => {
+    console.log("getItemById controller"+request.params.itemId)
+    userOrm.getItemsById(request.params.itemId, response);
+    response.status(200);
+  }
+
+  /** Add Item to DB */
+  const addItem = (request, response) => {
+    console.log("addItem controller..."+request.body)
+    userOrm.addItem(request.body, response);
     response.status(200);
   }
   
 
   module.exports = {
-    getUsers,
-    addUsers
+    getItems,
+    addItem,
+    getItemById
   }
