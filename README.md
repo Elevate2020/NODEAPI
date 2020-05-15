@@ -8,7 +8,7 @@ If not installed, please install it by downloading the latest stable Node versio
 Use any IDE/Text editor for project coding (such as Visual Studio code / Atom)
 
 
-Setup your initial project structure by running below command - 
+### Setup your initial project structure by running below command - 
 
 ####    npm init
 
@@ -24,7 +24,18 @@ Either you can add dependency in the file itself or install dependency in your t
 #### ^ = it will download the latest version automaticlly.
 
 
+## Let's run the existing Node API from github.com
+### Clone the project
+git clone https://github.com/Elevate2020/NODEAPI.git
 
+### Navigate to the cloned project directory in your local system
+### Run the below command to build/compile the Node.js application
+npm install
+### Run the start script to bootstrap our application
+npm start
+### You should see below log in your console
+#### Running on Nodemon port... 4000
+### Open your fav browser/postman and type the url in the address bar - http://localhost:4000/health
 # Recomended Tools:
 
 ### 1.eslint (npm i eslint -D)
@@ -36,6 +47,10 @@ Either you can add dependency in the file itself or install dependency in your t
 ### 2.Nodemon (npm i nodemon)
 
  Watch your node project and restarts once once it sees any source file change.
+
+ ### 3. Chai/Mocha/Sinon for unit testing
+
+
 
 
 
