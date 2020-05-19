@@ -4,7 +4,7 @@ const itemRouter = express.Router()
 
 
 itemRouter.get('/items', itemController.getItems);
-itemRouter.get('/item/:itemId?', itemController.getItemById);
-itemRouter.post('/addItem', itemController.addItem);
+ itemRouter.get('/item/:itemId?', itemController.getItemById);
+ itemRouter.post('/addItem', itemController.addItem);
 
 module.exports = itemRouter

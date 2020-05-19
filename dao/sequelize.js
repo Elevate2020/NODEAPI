@@ -22,10 +22,10 @@ const sequelize = new Sequelize(
   /** Model mapping */
   const Item = ItemModel(sequelize, Sequelize)
 
-  sequelize.sync({ force: true })
-  .then(() => {
-    console.log(`Database & tables created!`)
-  })
+  // sequelize.sync({ force: true })
+  // .then(() => {
+  //   console.log(`Database & tables created!`)
+  // })
 
 module.exports = {
   Item

@@ -18,7 +18,7 @@ function getItemsById(itemId, response) {
 
 /** Add Item to database */
 function addItem(jsonRequest, response) {
-    console.log('Add Item Dao'+jsonRequest)
+    console.log('Add Item Dao  ' +jsonRequest)
     Item.create(jsonRequest)
         .then(item => response.json(item))
 }
