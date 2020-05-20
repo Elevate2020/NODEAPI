@@ -1,4 +1,4 @@
-/** Item model class */
+/** Item model */
 module.exports = (sequelize, type) => {
     return sequelize.define('item', {
         id: {
@@ -9,18 +9,24 @@ module.exports = (sequelize, type) => {
         name: type.STRING,
         description: type.STRING,
         abbreviation: type.STRING,
-        manufacturerId: type.STRING,
-        manufacturerName: type.STRING,
+        manufacturer_id: type.STRING,
+        manufacturer_name: type.STRING,
+        manufactured_date: type.DATE,
+        expiry_date: type.DATE,
+        purchase_date: type.DATE,
         rating: type.STRING,
         color: type.STRING,
         height: type.STRING,
         weight: type.STRING,
-        units: type.STRING,
+        units_per_pack: type.STRING,
         brand: type.STRING,
-        vendor: type.STRING,
-        isFragile: type.STRING,
-        isReturnable: type.STRING,
-        isHazardous: type.STRING,
-        status:type.STRING
+        vendor_case_pack: type.STRING,
+        is_fragile: type.STRING,
+        is_returnable: type.STRING,
+        is_item_hazardous: type.STRING,
+        status: type.STRING
+    },{
+    tableName: 'item_attribute',
+    schema:'item_dev'
     })
 }
